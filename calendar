@@ -1,0 +1,13 @@
+from tkinter import*
+import calendar
+t1=int(input("Enter the year of the calendar"));
+text=calendar.calendar(t1);
+root=Tk();
+root.geometry("50x50")
+root.title("CALENDAR");
+l1=Label(root,text="CALENDAR",fg="black",bg="blue",width=10,height=3);
+l1.grid(row=1,column=1)
+root.config(background="white")
+l2=Label(root,text=text,font="Consoles 10")
+l2.grid(row=2,column=1,padx=20)
+root.mainloop();
